@@ -60,6 +60,7 @@ export class Hero  {
 }
 
 const tony = new Person('tony','stark','Nueva york')
+
 const ironman = new Hero('IronMan',45,'Tony',tony)
 
 console.log(ironman)

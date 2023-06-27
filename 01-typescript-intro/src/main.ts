@@ -33,9 +33,13 @@ import './style.css'
 // import './topics/05-basic-destructuring';
 // import './topics/06-function-destructuring';
 // import './topics/07-import-export';
-import './topics/08-classes';
+// import './topics/08-classes';
+// import './topics/09-generics';
+// import './topics/10-decoratos';
+import './topics/11-optional-chaining';
+
 
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `hola mundo wacho`
 
-console.log('hola mundo wachin')
+console.log('Hola Mundo')
