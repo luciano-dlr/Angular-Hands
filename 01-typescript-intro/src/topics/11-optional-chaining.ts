@@ -31,3 +31,4 @@ const printChildren = (passenger:Passenger) => {
 
 
 printChildren(passenger1)
+printChildren(passenger2)
