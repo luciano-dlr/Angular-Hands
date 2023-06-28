@@ -7,6 +7,7 @@ import { CounterComponent } from './components/counter/counter.component';
     CounterComponent
   ],
   exports:[
+
     CounterComponent
   ]
 })
