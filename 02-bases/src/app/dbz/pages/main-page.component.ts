@@ -19,4 +19,12 @@ public characters:Character[]=[{
   power:7500
 }]
 
+  onNewCharacter(Character:Character):void{
+
+    console.log('main page',Character)
+
+  }
+
+
+
 }
