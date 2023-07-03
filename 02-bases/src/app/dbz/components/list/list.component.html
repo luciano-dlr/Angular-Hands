@@ -13,21 +13,27 @@
   let isOdd = odd;
   "
 
-  class="list-group-item"
+  class="list-group-item d-flex justify-content-between align-items-center"
 
   [ngClass]="{
     'list-group-item-dark': isLast,
     'list-group-item-primary': isEven
-
   }">
+  <div class="">
+    <span class="text-primary">{{ i + 1 }}</span>
+    <span>{{character.name}} </span>
+    <strong>Power: </strong>
+    <span>{{character.power}}</span>
+  </div>
 
-  <span class="text-primary">{{ i+ 1 }}</span>
+  <button
+  class="btn btn-danger"
+  (click)="onDeleteId(i) "
+  >X</button>
 
-  <span>{{character.name}} </span>
 
-  <strong>Power: </strong>
 
-  <span>{{character.power}}</span>
+
 <!--
 
   <span>Es el Primero: {{isFirst}}</span>
