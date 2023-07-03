@@ -20,7 +20,7 @@
     'list-group-item-primary': isEven
   }">
   <div class="">
-    <span class="text-primary">{{ i + 1 }}</span>
+    <span class="text-primary">{{  + 1 }}</span>
     <span>{{character.name}} </span>
     <strong>Power: </strong>
     <span>{{character.power}}</span>
@@ -28,7 +28,7 @@
 
   <button
   class="btn btn-danger"
-  (click)="onDeleteId(i) "
+  (click)="onDeleteId(this.character.id)"
   >X</button>
 
 

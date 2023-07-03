@@ -16,25 +16,17 @@ export class ListComponent {
   }]
 
   @Output()
-  public onDelete: EventEmitter <number> =new EventEmitter();
+  public onDelete: EventEmitter<string> = new EventEmitter<string>();
 
+  onDeleteId(id?: string): void {
+    console.log('soy un valor', id);
 
-  onDeleteId(indexValue:number){
+    if(!id) return
 
-    console.log('soy un valor',indexValue)
-    // let id = indexValue
-    // return id;
-    // const deletedCharacter = this.characterList[indexValue];
-    this.onDelete.emit(indexValue);
+    this.onDelete.emit(id);
   }
 
 
-  // ondDeleteCharacter(index:number):void{
-  //   // 1 Emitir el id del personaje
-
-
-  //   // console.log(index,this.characters.indexOf)
-  // }
 }
 
 
