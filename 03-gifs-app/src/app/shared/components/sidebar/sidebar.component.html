@@ -1,6 +1,9 @@
 <div class="bg-dark border-right p-3" id="sidebar">
 
-  <h3 class="text-light">Gifs App</h3>
+    <h3 class="text-light">Gifs App</h3>
+
+
+
   <hr class="text-white">
 
   <div class="list-group list-reset">
@@ -8,13 +11,14 @@
     <button
     *ngFor="let tag of tags;"
     (click)="searchHistoryTag(tag)"
-    class="list-group-item list-group-item-action">
-      {{tag | titlecase}}
-    </button>
-    <!-- Uso del pipe titlecase Nativo de angular -->
+    class="list-group-item list-group-item-action fw-bold bg-light-subtle">
+    {{tag | titlecase}}
+  </button>
+  <!-- Uso del pipe titlecase Nativo de angular -->
 
 
-  </div>
+</div>
+
 
 
 </div>
