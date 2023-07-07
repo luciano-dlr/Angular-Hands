@@ -54,11 +54,11 @@ export class GifsNameService {
 
       this.gifList=resp.data;
 
-      console.log({gifs:this.gifList})
+      console.log('objeto gifsList.service',{gifs:this.gifList})
     });
 
 
-    console.log(this.tagsHistory)
+    console.log('tagHistory.service',this.tagsHistory)
    }
 
 
