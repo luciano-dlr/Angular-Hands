@@ -14,7 +14,17 @@ export class GifsNameService {
   private apiKey: string = 'S8TJ8IQ1tQgUeA4vJf9ApqqasSUcq3Wr'
   private serviceUrl:string = 'http://api.giphy.com/v1/gifs'
 
-  constructor(private http:HttpClient ) { }
+  constructor(private http:HttpClient ) {
+    this.loadLocalStorage();
+    console.log('gif service Listo')
+
+    // Mi validacion para recargar el primer valor
+    // La de Fernando linea 62
+
+    // const primeroPasado =  this._tagHistory.at(0)
+    // this.searchTag(primeroPasado!)
+
+   }
 
   get tagsHistory(){
     return [...this._tagHistory];
@@ -36,6 +46,22 @@ export class GifsNameService {
     //insertar el nuevo tag al inicio
     this._tagHistory.unshift(tag)
     this._tagHistory = this.tagsHistory.splice(0,10)
+    this.saveLogalStorage();
+   }
+
+
+   //metodo privado para guardar en localStorage
+   private saveLogalStorage():void{
+    localStorage.setItem('history',JSON.stringify(this._tagHistory))
+   }
+
+   private loadLocalStorage():void{
+    if(!localStorage.getItem('history'))return;
+    this._tagHistory = JSON.parse(localStorage.getItem('history')!)
+
+    //Validacion Fernando Herrera
+    if(this._tagHistory.length === 0 ) return;
+    this.searchTag(this._tagHistory[0])
 
    }
 
