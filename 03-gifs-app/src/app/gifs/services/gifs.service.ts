@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+
+
 
 @Injectable({providedIn: 'root'})
 export class GifsNameService {
 
   private _tagHistory:string[]=[];
-  private apiKey: string = ''
+  private apiKey: string = 'S8TJ8IQ1tQgUeA4vJf9ApqqasSUcq3Wr'
 
-  constructor() { }
+  constructor(private http:HttpClient ) { }
 
   get tagsHistory(){
     return [...this._tagHistory];
@@ -31,10 +34,13 @@ export class GifsNameService {
 
    }
 
-   searchTag(tag:string):void{
+ searchTag(tag:string):void{
 
     if(tag.length === 0) return ;
     this.organizeHistory(tag);
+
+    this.http.get('http://api.giphy.com/v1/gifs/search?api_key=S8TJ8IQ1tQgUeA4vJf9ApqqasSUcq3Wr&q=la garra&limit=10')
+
 
 
     console.log(this.tagsHistory)
