@@ -1,0 +1,16 @@
+.zindex{
+  z-index: 2;
+}
+
+.popup-container {
+  position: relative;
+  z-index: 3;
+  /* opacity: 1;
+  transition: opacity 0.3s ease-in-out; */
+}
+
+/* .sidebar-open + .overlay,
+.app-container .sidebar-container {
+  opacity: 0; /* Excluye el popup de la opacidad reducida
+}
+ */

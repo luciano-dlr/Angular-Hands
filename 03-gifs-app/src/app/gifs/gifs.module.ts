@@ -6,6 +6,8 @@ import { CardListComponent } from './components/card-list/card-list.component';
 import { GifsCardComponent } from './components/gifs-card/gifs-card.component';
 import { HomePageComponent } from './pages/home/home-page.component';
 import { SearchBoComponent } from './components/search-box/search-box.component';
+import { PopupSidebarComponent } from '../shared/components/popup-sidebar/popup-sidebar.component';
+
 
 
 @NgModule({
@@ -13,11 +15,15 @@ import { SearchBoComponent } from './components/search-box/search-box.component'
     HomePageComponent,
     SearchBoComponent,
     CardListComponent,
-    GifsCardComponent
+    GifsCardComponent,
+    PopupSidebarComponent
+
   ],
   imports: [
+
     CommonModule,
-    SharedModule
+    SharedModule,
+
   ],
   exports: [
     HomePageComponent,

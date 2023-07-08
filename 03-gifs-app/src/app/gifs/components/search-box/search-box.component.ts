@@ -5,14 +5,18 @@ import { GifsNameService } from '../../services/gifs.service';
   selector: 'gifs-search-box',
   template: `
 
-  <h5 class="text-light">Buscar</h5>
 
-  <input type="text"
-  class="form-control"
-  placeholder="Buscar Gifs"
-  (keyup.enter)="searchTag()"
-  #txtTagInput
-  >
+  <!-- <h5 class="text-light">Buscar</h5> -->
+  <div class="p-3">
+
+    <input type="text"
+    class="form-control"
+    placeholder="Buscar Gifs"
+    (keyup.enter)="searchTag()"
+    #txtTagInput
+    >
+
+  </div>
 
   `
 })

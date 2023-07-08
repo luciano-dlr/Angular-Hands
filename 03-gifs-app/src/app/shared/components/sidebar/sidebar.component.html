@@ -1,24 +1,50 @@
-<div class="bg-dark border-right p-3" id="sidebar">
+<!-- <div class="bg-dark border-right p-3" id="sidebar">
 
     <h3 class="text-light">Gifs App</h3>
+ -->
 
 
+    <!-- Boton popup -->
+    <!-- <app-popup-sidebar></app-popup-sidebar> -->
 
-  <hr class="text-white">
+
+  <!-- <hr class="text-white">
 
   <div class="list-group list-reset">
 
     <button
     *ngFor="let tag of tags;"
-    (click)="searchHistoryTag(tag)"
+    (click)="
+    searchHistoryTag(tag);
+
+    "
     class="list-group-item list-group-item-action fw-bold bg-light-subtle">
     {{tag | titlecase}}
-  </button>
+  </button> -->
   <!-- Uso del pipe titlecase Nativo de angular -->
 
-
+<!--
 </div>
 
 
 
+
+</div> -->
+
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h3 class="text-light">Gifs App</h3>
+
+  <!-- Agrega el componente app-popup-sidebar aquí -->
+  <!-- <app-popup-sidebar></app-popup-sidebar> -->
+
+  <hr class="text-white">
+
+  <div class="list-group list-reset">
+    <button
+      *ngFor="let tag of tags;"
+      (click)="searchHistoryTag(tag);"
+      class="list-group-item list-group-item-action fw-bold bg-light-subtle">
+      {{tag | titlecase}}
+    </button>
+  </div>
 </div>

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { GifsNameService } from 'src/app/gifs/services/gifs.service';
 
 
+
 @Component({
   selector: 'shared-sidebar',
   templateUrl: './sidebar.component.html',
@@ -28,6 +29,8 @@ export class SidebarComponent {
     this.gifsService.searchTag(tag)
 
   }
+
+
 
 
 
