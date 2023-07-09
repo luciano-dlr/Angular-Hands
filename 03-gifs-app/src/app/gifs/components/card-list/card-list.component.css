@@ -1,3 +1,10 @@
+.card-list{
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  padding: 1em;
+  margin: 1em;
+}
 .zindex{
-  z-index: 2;
+  z-index: 1;
 }

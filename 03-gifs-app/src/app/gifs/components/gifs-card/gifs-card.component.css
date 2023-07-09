@@ -1,6 +1,9 @@
-.fontZise{
-  font-size: 10px;
+.gif-card{
+  width: 25%;
+
+  z-index: 1;
 }
+
 .zindex{
-  z-index: 2;
+  z-index: 1;
 }

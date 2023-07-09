@@ -3,22 +3,8 @@ import { GifsNameService } from '../../services/gifs.service';
 
 @Component({
   selector: 'gifs-search-box',
-  template: `
-
-
-  <!-- <h5 class="text-light">Buscar</h5> -->
-  <div class="p-3">
-
-    <input type="text"
-    class="form-control"
-    placeholder="Buscar Gifs"
-    (keyup.enter)="searchTag()"
-    #txtTagInput
-    >
-
-  </div>
-
-  `
+  templateUrl: './search-box.component.html',
+  styleUrls: ['./search-box.component.css']
 })
 
 export class SearchBoComponent  {
