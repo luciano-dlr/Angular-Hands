@@ -10,6 +10,7 @@ import { PopupSidebarComponent } from '../shared/components/popup-sidebar/popup-
 
 
 
+
 @NgModule({
   declarations: [
     HomePageComponent,
@@ -23,6 +24,8 @@ import { PopupSidebarComponent } from '../shared/components/popup-sidebar/popup-
 
     CommonModule,
     SharedModule,
+
+
 
   ],
   exports: [

@@ -1,24 +1,27 @@
 
 
-    <div class="gif-card zindex" >
-
-      <shared-lazy-image
-        [url]="gif.images.downsized_large.url"
-        [alt]="gif.title || 'Sin Titulo'"
-        class="zindex"
-      ></shared-lazy-image>
-
-      <!-- <img
-      [src]="gif.images.downsized_medium.url"
-      [alt]="gif.title"
-      class="card-img-top"
-      > -->
+    <!-- <div class="gif-card zindex" > -->
 
 
-      <div class="">
-        <p class="">
-          {{gif.title || 'Sin Titulo'}}
+        <shared-lazy-image
+          [url]="gif.images.downsized_medium.url"
+          [alt]="gif.title || 'Sin Titulo'"
+          class=""
+        ></shared-lazy-image>
 
-        </p>
-      </div>
-    </div>
+
+    <!-- </div> -->
+
+    <!-- <img
+    [src]="gif.images.downsized_medium.url"
+    [alt]="gif.title"
+    class="card-img-top"
+    > -->
+
+
+    <!-- <div class="">
+      <p class="">
+        {{gif.title || 'Sin Titulo'}}
+images.downsized_medium.url
+      </p>
+    </div> -->

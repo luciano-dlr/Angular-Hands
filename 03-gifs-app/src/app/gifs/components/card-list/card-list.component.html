@@ -1,12 +1,12 @@
+
+
+
 <div class="card-list">
-
-
-  <app-gifs-card
-  *ngFor="let gif of gifs"
-  [gif]="gif"
-  class="zindex"
-  ></app-gifs-card>
-
-
-
+  <div class="card-list__container">
+    <app-gifs-card
+      *ngFor="let gif of gifs"
+      [gif]="gif"
+      class="zindex gif-card"
+    ></app-gifs-card>
+  </div>
 </div>

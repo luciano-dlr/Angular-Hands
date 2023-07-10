@@ -13,6 +13,7 @@ export class LazyImageComponent implements OnInit {
   @Input()
   public alt:string='';
 
+
   public hasLoader:boolean = false;
 
 
