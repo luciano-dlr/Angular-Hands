@@ -8,15 +8,158 @@
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
 @include mat.core();
+/* For use in src/lib/core/theming/_palette.scss */
+
+
+//material link custom theme generator http://mcg.mbitson.com/#!?test1=%233f51b5&test2=%23ffffff&test3=%23000000&test4=%2326a69a&themename=mcgtheme
+$md-test1: (
+    50 : #e8eaf6,
+    100 : #c5cbe9,
+    200 : #9fa8da,
+    300 : #7985cb,
+    400 : #5c6bc0,
+    500 : #3f51b5,
+    600 : #394aae,
+    700 : #3140a5,
+    800 : #29379d,
+    900 : #1b278d,
+    A100 : #c6cbff,
+    A200 : #939dff,
+    A400 : #606eff,
+    A700 : #4757ff,
+    contrast: (
+        50 : #ffffff,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #000000,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$md-test2: (
+    50 : #ffffff,
+    100 : #ffffff,
+    200 : #ffffff,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+    contrast: (
+        50 : #ffffff,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$md-test3: (
+    50 : #e0e0e0,
+    100 : #b3b3b3,
+    200 : #808080,
+    300 : #4d4d4d,
+    400 : #262626,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #a6a6a6,
+    A200 : #8c8c8c,
+    A400 : #737373,
+    A700 : #666666,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$md-test4: (
+    50 : #e5f4f3,
+    100 : #bee4e1,
+    200 : #93d3cd,
+    300 : #67c1b8,
+    400 : #47b3a9,
+    500 : #26a69a,
+    600 : #229e92,
+    700 : #1c9588,
+    800 : #178b7e,
+    900 : #0d7b6c,
+    A100 : #adfff3,
+    A200 : #7affec,
+    A400 : #47ffe4,
+    A700 : #2dffe0,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$gifs-app-primary: mat.define-palette(mat.$indigo-palette);
-$gifs-app-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+// $gifs-app-primary: mat.define-palette(mat.$indigo-palette);
+$gifs-app-primary: mat.define-palette($md-test1);
+
+// $gifs-app-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$gifs-app-accent: mat.define-palette($md-test2);
+
 
 // The warn palette is optional (defaults to red).
-$gifs-app-warn: mat.define-palette(mat.$red-palette);
+// $gifs-app-warn: mat.define-palette(mat.$red-palette);
+$gifs-app-warn: mat.define-palette($md-test3);
+
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
