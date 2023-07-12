@@ -13,14 +13,14 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-side-nav',
   templateUrl: './side-nav.component.html',
   styleUrls: ['./side-nav.component.css'],
-  standalone: true,
-  imports: [MatSidenavModule, MatFormFieldModule, MatSelectModule, MatButtonModule, MatIconModule],
+
+
   // schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class SideNavComponent {
   showDrawer = false;
 
-  toggleDrawer() {
+  toggleDrawer(): void {
     this.showDrawer = !this.showDrawer;
   }
 }

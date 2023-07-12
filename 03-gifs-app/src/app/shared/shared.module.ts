@@ -6,6 +6,12 @@ import { PopupSidebarComponent } from './components/popup-sidebar/popup-sidebar.
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { TogleDrawerComponent } from './components/togle-drawer/togle-drawer.component';
 
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+
 
 
 
@@ -13,50 +19,51 @@ import { TogleDrawerComponent } from './components/togle-drawer/togle-drawer.com
   declarations: [
     SidebarComponent,
     LazyImageComponent,
+    PopupSidebarComponent,
+    SideNavComponent,
     TogleDrawerComponent
-
 
   ],
   imports: [
-    SideNavComponent,
     CommonModule,
-
-
+    MatButtonModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatSidenavModule,
+    MatIconModule
 
   ],
-  exports:[
+  exports: [
     SidebarComponent,
     LazyImageComponent,
-    SideNavComponent
-
-
+    PopupSidebarComponent,
+    SideNavComponent,
+    TogleDrawerComponent
   ]
 })
 export class SharedModule { }
 
-
-
-// @NgModule({
-//   declarations: [
-//     SidebarComponent,
-//     LazyImageComponent,
-
-
-//   ],
-//   imports: [
-//     SideNavComponent,
-//     CommonModule,
-//     TogleDrawerComponent
+// declarations: [
+//   SidebarComponent,
+//   LazyImageComponent,
 
 
 
-//   ],
-//   exports:[
-//     SidebarComponent,
-//     LazyImageComponent,
-//     SideNavComponent,
+// ],
+// imports: [
+//   SideNavComponent,
+//   CommonModule,
+//   TogleDrawerComponent,
 
 
 
-//   ]
+// ],
+// exports:[
+//   SidebarComponent,
+//   LazyImageComponent,
+//   SideNavComponent,
+//   TogleDrawerComponent
+
+
+// ]
 // })

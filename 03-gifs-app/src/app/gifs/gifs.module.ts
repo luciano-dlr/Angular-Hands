@@ -17,19 +17,32 @@ import { PopupSidebarComponent } from '../shared/components/popup-sidebar/popup-
     SearchBoComponent,
     CardListComponent,
     GifsCardComponent,
-    PopupSidebarComponent
-
   ],
   imports: [
-
     CommonModule,
     SharedModule,
-
-
-
   ],
   exports: [
     HomePageComponent,
   ]
 })
 export class GifsModule { }
+// declarations: [
+//   HomePageComponent,
+//   SearchBoComponent,
+//   CardListComponent,
+//   GifsCardComponent,
+//   PopupSidebarComponent
+
+// ],
+// imports: [
+
+//   CommonModule,
+//   SharedModule,
+
+
+
+// ],
+// exports: [
+//   HomePageComponent,
+// ]
