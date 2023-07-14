@@ -1,7 +1,7 @@
 <button class="open-button" (click)="toggleSidebar()">Abrir Sidebar</button>
 
 <div class="sidebar-container" [ngClass]="{'sidebar-open': isSidebarOpen}">
-  <shared-sidebar></shared-sidebar>
+  <!-- <shared-sidebar></shared-sidebar> -->
 </div>
 
 <div class="overlay" *ngIf="isSidebarOpen" (click)="toggleSidebar()"></div>

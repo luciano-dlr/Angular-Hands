@@ -30,7 +30,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatSelectModule,
     MatFormFieldModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+
 
   ],
   exports: [
