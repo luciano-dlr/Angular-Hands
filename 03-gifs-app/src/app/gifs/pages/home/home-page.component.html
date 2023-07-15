@@ -1,25 +1,44 @@
-<div class="">
+<div class="Cotainer">
   <div class="">
     <!--Busqueda-->
-    <h2>Buscar</h2>
 
-      <app-popup-sidebar></app-popup-sidebar>
-      <gifs-search-box></gifs-search-box>
+
+
       <!-- <app-popup-sidebar></app-popup-sidebar> -->
-      <app-side-nav></app-side-nav>
+      <!-- <app-side-nav></app-side-nav> -->
 
-      <app-button-sidenav></app-button-sidenav>
+      <!-- <app-button-sidenav></app-button-sidenav> -->
 
-      <app-togle-drawer>
-
-      </app-togle-drawer>
+      <!-- <app-togle-drawer></app-togle-drawer> -->
 
 
 
-  </div>
+    </div>
 
-  <div class="">
-    <!--Listado de gifs-->
-    <gifs-card-list [gifs]="gifs"></gifs-card-list>
-  </div>
+
+
+    <mat-drawer-container class="example-container">
+      <mat-drawer [opened]="showDrawer">
+        <!-- History Nav -->
+        <shared-sidebar></shared-sidebar>
+
+      </mat-drawer>
+      <mat-drawer-content>
+
+        <div class="bg-black">
+
+          <button mat-raised-button (click)="toggleDrawer()">Toggle drawer</button>
+
+          <gifs-search-box></gifs-search-box>
+
+          <div class="">
+            <!--Listado de gifs-->
+            <gifs-card-list [gifs]="gifs"></gifs-card-list>
+          </div>
+
+        </div>
+
+    </mat-drawer-content>
+  </mat-drawer-container>
+
 </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { GifsNameService } from '../../services/gifs.service';
 import { Gif } from '../../interfaces/gifs.interfaces';
 
@@ -14,5 +14,11 @@ export class HomePageComponent {
 
   get gifs(): Gif[] {
     return this.gifsService.gifList;
+  }
+
+  @Input() showDrawer = false;
+
+  toggleDrawer(): void {
+    this.showDrawer = !this.showDrawer;
   }
 }

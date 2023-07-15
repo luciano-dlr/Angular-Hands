@@ -10,6 +10,13 @@ import { PopupSidebarComponent } from '../shared/components/popup-sidebar/popup-
 import { ButtonSidenavComponent } from './components/button-sidenav/button-sidenav.component';
 
 
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+
+
 
 
 @NgModule({
@@ -18,17 +25,27 @@ import { ButtonSidenavComponent } from './components/button-sidenav/button-siden
     SearchBoComponent,
     CardListComponent,
     GifsCardComponent,
-    ButtonSidenavComponent,
+    ButtonSidenavComponent
   ],
   imports: [
+
     CommonModule,
     SharedModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatSidenavModule,
+    MatIconModule,
   ],
   exports: [
     HomePageComponent,
   ]
 })
 export class GifsModule { }
+
+
+
+
 // declarations: [
 //   HomePageComponent,
 //   SearchBoComponent,
