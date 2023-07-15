@@ -7,6 +7,7 @@ import { GifsCardComponent } from './components/gifs-card/gifs-card.component';
 import { HomePageComponent } from './pages/home/home-page.component';
 import { SearchBoComponent } from './components/search-box/search-box.component';
 import { PopupSidebarComponent } from '../shared/components/popup-sidebar/popup-sidebar.component';
+import { ButtonSidenavComponent } from './components/button-sidenav/button-sidenav.component';
 
 
 
@@ -17,6 +18,7 @@ import { PopupSidebarComponent } from '../shared/components/popup-sidebar/popup-
     SearchBoComponent,
     CardListComponent,
     GifsCardComponent,
+    ButtonSidenavComponent,
   ],
   imports: [
     CommonModule,
