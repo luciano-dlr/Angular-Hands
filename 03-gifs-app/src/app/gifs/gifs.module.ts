@@ -16,6 +16,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 
+import {MatInputModule} from '@angular/material/input';
+
+import {FormsModule} from '@angular/forms';
+
 
 
 
@@ -36,6 +40,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatFormFieldModule,
     MatSidenavModule,
     MatIconModule,
+    MatInputModule,
+    FormsModule
   ],
   exports: [
     HomePageComponent,

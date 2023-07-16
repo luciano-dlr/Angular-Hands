@@ -25,11 +25,34 @@
       </mat-drawer>
       <mat-drawer-content>
 
-        <div class="bg-black">
+        <div class="containerDiv">
 
-          <button mat-raised-button (click)="toggleDrawer()">Toggle drawer</button>
+          <div class="containerDiv_Header">
+            <div class="containerDiv_Header-title">
 
-          <gifs-search-box></gifs-search-box>
+              <h1 class="title">Gif App</h1>
+
+            </div>
+
+            <div class="containerDiv_Header-searchBox">
+
+              <button mat-raised-button (click)="toggleDrawer()">
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48" color="white">
+                  <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/>
+                </svg>
+
+              </button>
+
+              <gifs-search-box class="search-box"></gifs-search-box>
+
+
+
+            </div>
+
+
+          </div>
+
 
           <div class="">
             <!--Listado de gifs-->

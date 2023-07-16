@@ -14,3 +14,30 @@
   opacity: 0; /* Excluye el popup de la opacidad reducida
 }
  */
+
+
+
+ .containerDiv{
+   background: black;
+  }
+
+  .containerDiv_Header-title{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .title{
+    color: white;
+  }
+
+
+  .containerDiv_Header-searchBox{
+    display: flex;
+    align-items: center;
+
+  }
+
+  .search-box{
+    width: 80%;
+  }

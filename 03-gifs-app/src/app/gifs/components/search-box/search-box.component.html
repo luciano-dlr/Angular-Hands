@@ -1,4 +1,4 @@
-<div class="">
+<!-- <div class="">
   <h1>aca boton sidebar</h1>
 
   <input type="text"
@@ -8,4 +8,14 @@
   #txtTagInput
   >
 
+</div> -->
+<div>
+
+  <form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Buscar Gifs</mat-label>
+    <input type="text" matInput (keyup.enter)="searchTag()"
+    #txtTagInput>
+  </mat-form-field>
+  </form>
 </div>
