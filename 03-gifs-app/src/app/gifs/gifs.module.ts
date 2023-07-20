@@ -19,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 
 import {FormsModule} from '@angular/forms';
+import { PushNotiComponent } from './components/push-noti/push-noti.component';
 
 
 
@@ -29,7 +30,8 @@ import {FormsModule} from '@angular/forms';
     SearchBoComponent,
     CardListComponent,
     GifsCardComponent,
-    ButtonSidenavComponent
+    ButtonSidenavComponent,
+    PushNotiComponent
   ],
   imports: [
 
